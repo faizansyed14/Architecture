@@ -6,7 +6,6 @@
     <title>AR.Mohmedi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css">
-    <link rel="scss" href="main.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -14,7 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="about" href="about.html">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </head>
 <body>
@@ -35,69 +33,93 @@
             </div>
         </div>
     </nav>
-   
-    <video autoplay muted loop id="myVideo">
-      <source src="img/video1.mp4" type="video/mp4">
-    </video>
+    
+    <div class="slideshow-container">
 
-
-    <div>
-      <div class="puopu">
-        <h1 class="puopu-r1">Dream <span class="puopu-small">of</span>Design's</h1>
+      <div class="mySlides fade">
+        <img src="img\1.jpg" style="width:100%">
+        
+      </div>
+      <div class="mySlides fade">
+        <img src="img\2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="img\3.jpg" style="width:100%">
         </div>
-      <h1 class="ml12">AR.Mohmedi</h1>
-    </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+    
+    
+    <!-- about section start -->
+    <section>
    
-
-    <!--  start -->
-
-
-     <section>
-            <div class="max-width">
-                    <section class="services" id="services">
-                        <div class="max-width">
-                        <h2 class="title">Advance Projects</h2>
-                        <div class="serv-content">
-                          
-                            <div class="card">
-                                <div class="box">
-                                    <div class="text">MOSQUE</div>
-                                    <a href="project.html">
-                                    <img src="img/4.jpg" class="mosque">
-                                  </a>
-                                    <p>The Mosque Design which attracts by its attractiveness. </p>
-                                </div>
-                            </div>
-                            
-                            <div class="card">
-                                <div class="box">                              
-                                    <div class="text">APARTMENT</div>
-                                    <a href="project.html">
-                                    <img src="img/5.jpg" class="apartment">
-                                  </a>
-                                    <p>GM Flat Apartments</p>
-                                </div>
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-       </section>
-
-
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container bottomContainer">
+          <div class="ultimateImg">
+            <img class="mainImg" src="img/4.jpg">
+            <div class="purpleBox">
+              <p class="purpleText">
+                Client Reviews
+              </p>
+              <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
+            </div>
+          </div>
+          <div class="allText bottomText">
+             <p class="text-blk headingText">
+              AR. Mohmedi
+             </p>
+            <p class="text-blk subHeadingText">
+              Highly accomplished architect with over 12 years of experience
+            </p>
+            <p class="text-blk description">
+              Iam certified from JNTU , I specializes in creating captivating plans for various types of spaces, including commercial spaces, residential apartments, and colleges. My designs are known for their attractiveness and innovative approach. I posess a keen eye for detail and a deep understanding of architectural principles, allowing me to develop functional and aesthetically pleasing structures.
+            </p>
+            <a class="explore">
+              View Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section start -->
+    
+    
     <!-- contact section start -->
     
     <!-- footer section start -->
-    <footer>
-   
-        <div class="wrapper">
-           
-            </div>
-            <p class="design">design: Faizan </p>      
-            <p>© 2022-2023</p>      
-         </div>
-    </footer>
+ 
+  <script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>

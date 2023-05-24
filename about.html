@@ -6,6 +6,7 @@
     <title>AR.Mohmedi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="scss" href="main.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -13,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="about" href="about.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </head>
 <body>
@@ -25,7 +27,7 @@
             <ul class="menu">
                 <li><a href="index.html" id="Home" class="menu-btn">Home</a></li>
                 <li><a href="about.html" class="menu-btn">About</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="project.html" class="menu-btn">Projects</a></li>
                 <li><a href="contact.html" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -33,47 +35,63 @@
             </div>
         </div>
     </nav>
-    
-
-    <!-- about section start -->
    
-    <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container bottomContainer">
-          <div class="ultimateImg">
-            <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp4.svg">
-            <div class="purpleBox">
-              <p class="purpleText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus.
-              </p>
-              <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
-            </div>
-          </div>
-          <div class="allText bottomText">
-            <p class="text-blk headingText">
-              About Me
-            </p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <a class="explore">
-              View Services
-            </a>
-          </div>
-        </div>
-      </div>
+    <video autoplay muted loop id="myVideo">
+      <source src="img/video1.mp4" type="video/mp4">
+    </video>
 
-    <!-- skills section start -->
-    
-    
+
+    <div>
+      <div class="puopu">
+        <h1 class="puopu-r1">Dream <span class="puopu-small">of</span>Design's</h1>
+        </div>
+      <h1 class="ml12">AR.Mohmedi</h1>
+    </div>
+   
+
+    <!--  start -->
+
+
+     <section>
+            <div class="max-width">
+                    <section class="services" id="services">
+                        <div class="max-width">
+                        <h2 class="title">Advance Projects</h2>
+                        <div class="serv-content">
+                          
+                            <div class="card">
+                                <div class="box">
+                                    <div class="text">MOSQUE</div>
+                                    <a href="project.html">
+                                    <img src="img/4.jpg" class="mosque">
+                                  </a>
+                                    <p>The Mosque Design which attracts by its attractiveness. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="box">                              
+                                    <div class="text">APARTMENT</div>
+                                    <a href="project.html">
+                                    <img src="img/5.jpg" class="apartment">
+                                  </a>
+                                    <p>GM Flat Apartments</p>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+       </section>
+
+
     <!-- contact section start -->
     
     <!-- footer section start -->
     <footer>
+   
         <div class="wrapper">
-
+           
             </div>
             <p class="design">design: Faizan </p>      
             <p>© 2022-2023</p>      
